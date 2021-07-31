@@ -8,6 +8,7 @@ before_install:
 script:
   - docker run -e CI=true basiliofarach/docker-react npm run test -- --coverage
 
+language: minimal 
 deploy:
   provider: elasticbeanstalk 
   region: "us-east-2"
